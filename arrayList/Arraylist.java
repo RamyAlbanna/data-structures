@@ -16,6 +16,9 @@ public class Arraylist {
         return this.arr[index];
     }
 
+    public int size(){
+        return this.lastIndexUsed + 1;
+    }
     private void generateNewArray(){
         this.initialSize *= 2;
         int[] newArr = new int[initialSize];
