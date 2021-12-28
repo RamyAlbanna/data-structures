@@ -3,7 +3,7 @@ package com.company.stack;
 import com.company.arrayList.Arraylist;
 
 public class Stack {
-    private Arraylist arr;
+    private final Arraylist arr;
     private int index;
 
     public Stack(){
@@ -29,6 +29,7 @@ public class Stack {
     public int size(){
         return this.arr.size();
     }
+
 
     public void print(){
         for (int i = this.arr.size() -1; i >= 0 ; i--)
